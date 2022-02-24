@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6510d6905884283b3ab66891b059169, type: 3}
   m_Name: Upgrades Config
   m_EditorClassIdentifier: 
-  _powerList: []
-  _speedList: []
-  _armorList: []
+  _powerStatList: []
+  _speedStatList: []
+  _armorStatList: []

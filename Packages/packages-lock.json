@@ -7,6 +7,15 @@
       "dependencies": {},
       "hash": "eab10b0a22485c2170b11571347612e5ce20e499"
     },
+    "com.deltation.toon-shader": {
+      "version": "https://github.com/Delt06/urp-toon-shader.git?path=Packages/com.deltation.toon-shader",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "10.3.2"
+      },
+      "hash": "152665524d0b45ad483cdcc5ae8abf346528efc1"
+    },
     "com.deltation.ui-scaling-toolkit": {
       "version": "https://github.com/Delt06/ui-scaling-toolkit.git?path=Packages/com.deltation.ui-scaling-toolkit",
       "depth": 0,
