@@ -6,12 +6,12 @@ namespace Core.Vibrations
     [CreateAssetMenu(fileName = "Vibrations UpgradesConfig", menuName = "Configs/Vibrations", order = 1)]
     public class VibrationsConfig : ScriptableObject
     {
-        [SerializeField] private HapticTypes _upgradeVibration;
-        [SerializeField] private HapticTypes _auctionFinishingVibration;
-        [SerializeField] private HapticTypes _tapSpeedUpVibration;
+        [SerializeField] private HapticTypes _upgradeHaptic;
+        [SerializeField] private HapticTypes _auctionFinishingHaptic;
+        [SerializeField] private HapticTypes _tapSpeedUpHaptic;
 
-        public HapticTypes UpgradeVibration => _upgradeVibration;
-        public HapticTypes AuctionFinishingVibration => _auctionFinishingVibration;
-        public HapticTypes TapSpeedUpVibration => _tapSpeedUpVibration;
+        public HapticTypes UpgradeVibration => _upgradeHaptic;
+        public HapticTypes AuctionFinishingHaptic => _auctionFinishingHaptic;
+        public HapticTypes TapSpeedUpHaptic => _tapSpeedUpHaptic;
     }
 }
