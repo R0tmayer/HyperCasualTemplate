@@ -7,17 +7,17 @@ namespace Core.Upgrades
 
     public class UpgradesConfig : ScriptableObject
     {
-        [TabGroup("Upgrades", "PowerStatList")]
+        [TabGroup("Upgrades", "Power")]
         [SerializeField]
         [ListDrawerSettings(ShowIndexLabels = true)]
         private Stat[] _powerStatList;        
         
-        [TabGroup("Upgrades", "SpeedStatList")]
+        [TabGroup("Upgrades", "Speed")]
         [SerializeField]
         [ListDrawerSettings(ShowIndexLabels = true)]
         private Stat[] _speedStatList;        
         
-        [TabGroup("Upgrades", "ArmorStatList")]
+        [TabGroup("Upgrades", "Armor")]
         [SerializeField]
         [ListDrawerSettings(ShowIndexLabels = true)]
         private Stat[] _armorStatList;
