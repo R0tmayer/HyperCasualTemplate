@@ -11,19 +11,23 @@ namespace Core.Upgrades
         public int PowerLevel
         {
             get => PlayerPrefs.GetInt(_powerLevelPrefsKey, 0);
-            set => PlayerPrefs.SetFloat(_powerLevelPrefsKey, value);
+            private set => PlayerPrefs.SetFloat(_powerLevelPrefsKey, value);
         }
 
         public int SpeedLevel
         {
             get => PlayerPrefs.GetInt(_speedLevelPrefsKey, 0);
-            set => PlayerPrefs.SetFloat(_speedLevelPrefsKey, value);
+            private set => PlayerPrefs.SetFloat(_speedLevelPrefsKey, value);
         }
 
         public int ArmorLevel
         {
             get => PlayerPrefs.GetInt(_armorLevelPrefsKey, 0);
-            set => PlayerPrefs.SetFloat(_armorLevelPrefsKey, value);
+            private set => PlayerPrefs.SetFloat(_armorLevelPrefsKey, value);
         }
+
+        public void IncrementPowerLevel() => PowerLevel++;
+        public void IncrementSpeedLevel() => SpeedLevel++;
+        public void IncrementArmorLevel() => ArmorLevel++;
     }
 }

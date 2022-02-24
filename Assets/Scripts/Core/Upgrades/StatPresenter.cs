@@ -2,10 +2,10 @@
 {
     public class StatPresenter
     {
-        private UpgradesConfig _upgradesUpgradesConfig;
-        private StatLevelSaver _statLevelSaver;
+        private readonly UpgradesConfig _upgradesUpgradesConfig;
+        private readonly StatLevelSaver _statLevelSaver;
 
-        public void Construct(UpgradesConfig upgradesUpgradesConfig, StatLevelSaver statLevelSaver)
+        public StatPresenter(UpgradesConfig upgradesUpgradesConfig, StatLevelSaver statLevelSaver)
         {
             _statLevelSaver = statLevelSaver;
             _upgradesUpgradesConfig = upgradesUpgradesConfig;
