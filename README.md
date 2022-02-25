@@ -13,6 +13,7 @@
 
 ## Ready-to-use mechanics:
 - Input Joystick
+- Input Swipe
 - Upgrades system
 - Vibrations system
 
