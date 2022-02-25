@@ -12,7 +12,7 @@
 - Upgrades system
 - Vibrations system
 
-######**Assets:**
+## Assets:
 - ODIN Inspector
 - DOTween
 - Nice Vibrations
