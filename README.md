@@ -5,6 +5,8 @@ Including:
 - UI Scaling Toolkit
 - DI Framework
 - Input Joystick
+- Upgrades system
+- Vibrations system
 - Skybox, fog, shadow blob, finishing stripes materials
 
 Assets:
