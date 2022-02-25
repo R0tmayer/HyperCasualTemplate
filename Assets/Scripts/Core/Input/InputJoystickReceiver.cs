@@ -1,21 +1,20 @@
-﻿using System;
-using Sirenix.OdinInspector;
+﻿using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Core.Input
 {
-    public class InputReceiver : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
+    public class InputJoystickReceiver : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
     {
         [SerializeField] [Required] private RectTransform _joystick;
         [SerializeField] [Required] private RectTransform _internalJoystick;
         private int? _currentFinger;
+        private float _distanceRation;
         private Vector2 _initPos;
 
         private float _maxDistance;
 
         public Vector2 Direction { get; private set; }
-        public float DistanceRation { get; private set; }
 
         private void Awake()
         {
@@ -26,7 +25,7 @@ namespace Core.Input
         {
             if (eventData.pointerId != _currentFinger) return;
             Vector2 direction = eventData.position - _initPos;
-            DistanceRation = Mathf.Clamp01(direction.magnitude / _maxDistance);
+            _distanceRation = Mathf.Clamp01(direction.magnitude / _maxDistance);
             Direction = direction.normalized;
             SetJoystickPosition();
         }
@@ -51,13 +50,13 @@ namespace Core.Input
 
         private void SetJoystickPosition()
         {
-            _internalJoystick.anchoredPosition = Direction * DistanceRation * _maxDistance;
+            _internalJoystick.anchoredPosition = Direction * _distanceRation * _maxDistance;
         }
 
         private void ResetJoystickPosition()
         {
             Direction = Vector2.zero;
-            DistanceRation = 0f;
+            _distanceRation = 0f;
             SetJoystickPosition();
         }
     }
