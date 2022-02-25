@@ -7,7 +7,7 @@
 - DI Framework
 - Skybox, fog, shadow blob, finishing stripes materials
 
-######**Ready-to-use mechanics:**
+## Ready-to-use mechanics:
 - Input Joystick
 - Upgrades system
 - Vibrations system
