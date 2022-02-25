@@ -4,7 +4,7 @@ Including:
 - UI Scaling Toolkit
 - DI Framework
 - Input Joystick
-- Skybox, fog, shadow blob materials
+- Skybox, fog, shadow blob, finishing stripes materials
 
 Assets:
 - ODIN Inspector
