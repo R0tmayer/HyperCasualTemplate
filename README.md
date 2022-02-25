@@ -3,6 +3,7 @@
 
 ## **Including:**
 - URP
+- Cinemachine
 - UI Scaling Toolkit
 - DI Framework
 - Skybox, fog, shadow blob, finishing stripes materials
