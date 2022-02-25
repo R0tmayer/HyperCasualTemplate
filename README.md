@@ -4,9 +4,10 @@
 ## **Including:**
 - URP
 - Cinemachine
-- UI Scaling Toolkit
-- DI Framework
-- Skybox, fog, shadow blob, finishing stripes materials
+- DELTation UI Scaling Toolkit
+- DELTation DI Framework
+- DELTation Toon Shader
+- DELTation Skybox, fog, shadow blob, finishing stripes materials
 
 ## Ready-to-use mechanics:
 - Input Joystick
