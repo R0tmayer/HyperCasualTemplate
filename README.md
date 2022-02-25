@@ -4,10 +4,12 @@ Including:
 - URP
 - UI Scaling Toolkit
 - DI Framework
+- Skybox, fog, shadow blob, finishing stripes materials
+
+Ready-to-use mechanics:
 - Input Joystick
 - Upgrades system
 - Vibrations system
-- Skybox, fog, shadow blob, finishing stripes materials
 
 Assets:
 - ODIN Inspector
