@@ -10,7 +10,7 @@
 - UI Scaling Toolkit
 - DI Framework
 
-## Ready-to-use mechanics:
+## Ready-to-use features:
 - Input Swipe Receiver
 - Input Joystick Receiver
 - Hierarchy Highlighter
