@@ -1,15 +1,19 @@
 # HyperCasualTemplate 
 ## Unity Engine 2020.3.22f1
 
-## **Including:**
+## Including:
 - URP
 - Cinemachine
+- TextMeshPro
+
+## DELTation
 - UI Scaling Toolkit
 - DI Framework
-- Skybox, fog, shadow blob, finishing stripes materials
 
 ## Ready-to-use mechanics:
-- Input Joystick
+- Input Swipe Receiver
+- Input Joystick Receiver
+- Hierarchy Highlighter
 - Upgrades system
 - Vibrations system
 
@@ -17,3 +21,5 @@
 - ODIN Inspector
 - DOTween
 - Nice Vibrations
+- Graphy - Ultimate Stats Monitor
+
