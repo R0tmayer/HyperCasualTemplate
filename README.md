@@ -22,4 +22,5 @@
 - DOTween
 - Nice Vibrations
 - Graphy - Ultimate Stats Monitor
+- Better UI
 
