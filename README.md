@@ -1,4 +1,4 @@
-# HyperCasualTemplate 
+# Template for hyper-casual games
 ## Unity Engine 2020.3.16f1
 
 ## Including:
