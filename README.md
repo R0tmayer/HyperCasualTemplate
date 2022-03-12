@@ -1,12 +1,10 @@
 # Template for hyper-casual games
 ## Unity Engine 2020.3.16f1
 
-## Including:
+## Plugins and Packages
 - URP
 - Cinemachine
 - TextMeshPro
-
-## DELTation
 - UI Scaling Toolkit
 - DI Framework
 
@@ -23,4 +21,3 @@
 - Nice Vibrations
 - Graphy - Ultimate Stats Monitor
 - Better UI
-
