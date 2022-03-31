@@ -1,5 +1,5 @@
 # Template for hyper-casual games
-## Unity Engine 2020.3.16f1
+## Unity Engine 2020.3.20f1
 
 ## Plugins and Packages
 - URP
@@ -21,3 +21,6 @@
 - Nice Vibrations
 - Graphy - Ultimate Stats Monitor
 - Better UI
+- MonKey Commander
+- Asset Hunter Pro
+- Highlight Plus
