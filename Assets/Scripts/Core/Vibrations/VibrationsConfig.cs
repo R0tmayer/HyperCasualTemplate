@@ -1,4 +1,5 @@
-﻿using MoreMountains.NiceVibrations;
+﻿using Lofelt.NiceVibrations;
+using MoreMountains.FeedbacksForThirdParty;
 using UnityEngine;
 
 namespace Core.Vibrations
@@ -6,12 +7,12 @@ namespace Core.Vibrations
     [CreateAssetMenu(fileName = "Vibrations Config", menuName = "Configs/Vibrations", order = 1)]
     public class VibrationsConfig : ScriptableObject
     {
-        [SerializeField] private HapticTypes _upgradeHaptic;
-        [SerializeField] private HapticTypes _auctionFinishingHaptic;
-        [SerializeField] private HapticTypes _tapSpeedUpHaptic;
+        [SerializeField] private HapticPatterns.PresetType _upgradeHaptic;
+        [SerializeField] private HapticPatterns.PresetType _auctionFinishingHaptic;
+        [SerializeField] private HapticPatterns.PresetType _tapSpeedUpHaptic;
 
-        public HapticTypes UpgradeVibration => _upgradeHaptic;
-        public HapticTypes AuctionFinishingHaptic => _auctionFinishingHaptic;
-        public HapticTypes TapSpeedUpHaptic => _tapSpeedUpHaptic;
+        public HapticPatterns.PresetType UpgradeVibration => _upgradeHaptic;
+        public HapticPatterns.PresetType AuctionFinishingHaptic => _auctionFinishingHaptic;
+        public HapticPatterns.PresetType TapSpeedUpHaptic => _tapSpeedUpHaptic;
     }
 }
