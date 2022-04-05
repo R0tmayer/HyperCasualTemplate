@@ -18,7 +18,7 @@
 ## Assets:
 - ODIN Inspector
 - DOTween
-- Nice Vibrations
+- FEEL & NiceVibrations
 - Graphy - Ultimate Stats Monitor
 - Better UI
 - MonKey Commander
