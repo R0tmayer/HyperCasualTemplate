@@ -11,7 +11,7 @@ namespace Core.Vibrations
         [SerializeField] private HapticPatterns.PresetType _auctionFinishingHaptic;
         [SerializeField] private HapticPatterns.PresetType _tapSpeedUpHaptic;
 
-        public HapticPatterns.PresetType UpgradeVibration => _upgradeHaptic;
+        public HapticPatterns.PresetType UpgradeHaptic => _upgradeHaptic;
         public HapticPatterns.PresetType AuctionFinishingHaptic => _auctionFinishingHaptic;
         public HapticPatterns.PresetType TapSpeedUpHaptic => _tapSpeedUpHaptic;
     }
