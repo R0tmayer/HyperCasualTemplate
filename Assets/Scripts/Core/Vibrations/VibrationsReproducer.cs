@@ -1,5 +1,4 @@
-﻿using Lofelt.NiceVibrations;
-using MoreMountains.FeedbacksForThirdParty;
+﻿using MoreMountains.NiceVibrations;
 using UnityEngine;
 
 namespace Core.Vibrations
@@ -14,10 +13,10 @@ namespace Core.Vibrations
             set => PlayerPrefs.SetInt(VibrationsPrefsKey, value ? 1 : 0);
         }
 
-        public void TryPlayHaptic(HapticPatterns.PresetType hapticPreset)
+        public void TryPlayHaptic(HapticTypes hapticTypes)
         {
             if (Enabled)
-                HapticPatterns.PlayPreset(hapticPreset);
+                MMVibrationManager.Haptic(hapticTypes);
         }
     }
 }
