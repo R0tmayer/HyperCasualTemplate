@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.deltation.di-framework": "https://github.com/Delt06/di-framework.git?path=Packages/com.deltation.di-framework",
-    "com.deltation.toon-shader": "https://github.com/Delt06/urp-toon-shader.git?path=Packages/com.deltation.toon-shader",
+    "com.deltation.toon-shader": "https://github.com/Delt06/urp-toon-shader.git?path=Packages/com.deltation.toon-shader#2020.3",
     "com.deltation.ui-scaling-toolkit": "https://github.com/Delt06/ui-scaling-toolkit.git?path=Packages/com.deltation.ui-scaling-toolkit",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.6.11",
