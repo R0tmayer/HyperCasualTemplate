@@ -7,7 +7,7 @@ namespace Core.Input
     public class InputJoystickReceiver : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointerDownHandler
     {
         [SerializeField] [Required] private RectTransform _joystick;
-        [SerializeField] [Required] private RectTransform _internalJoystick;
+        [SerializeField] [Required] private RectTransform _knob;
         private int? _currentFinger;
         private float _distanceRation;
         private Vector2 _initPos;
@@ -50,7 +50,7 @@ namespace Core.Input
 
         private void SetJoystickPosition()
         {
-            _internalJoystick.anchoredPosition = Direction * _distanceRation * _maxDistance;
+            _knob.anchoredPosition = Direction * _distanceRation * _maxDistance;
         }
 
         private void ResetJoystickPosition()
