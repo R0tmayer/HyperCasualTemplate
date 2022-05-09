@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Core.UI
 {
-    public class ImageStateToggle : MonoBehaviour
+    public class VibrationToggle : MonoBehaviour, IContextToggle
     {
         [SerializeField] [Required] private Image _turnedOnImage;
         [SerializeField] [Required] private Button _button;
@@ -18,26 +18,26 @@ namespace Core.UI
 
         private void Start()
         {
-            UpdateStrikethrough();
+            UpdateImage();
         }
 
         private void OnEnable()
         {
-            _button.onClick.AddListener(ToggleVibrations);
+            _button.onClick.AddListener(Toggle);
         }
 
         private void OnDisable()
         {
-            _button.onClick.RemoveListener(ToggleVibrations);
+            _button.onClick.RemoveListener(Toggle);
         }
 
-        private void ToggleVibrations()
+        public void Toggle()
         {
             _vibrationsReproducer.Enabled = !_vibrationsReproducer.Enabled;
-            UpdateStrikethrough();
+            UpdateImage();
         }
 
-        private void UpdateStrikethrough()
+        private void UpdateImage()
         {
             _turnedOnImage.gameObject.SetActive(_vibrationsReproducer.Enabled);
         }
