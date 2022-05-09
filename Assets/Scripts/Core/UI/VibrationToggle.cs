@@ -9,11 +9,11 @@ namespace Core.UI
     {
         [SerializeField] [Required] private Image _turnedOnImage;
         [SerializeField] [Required] private Button _button;
-        private VibrationsReproducer _vibrationsReproducer;
+        private VibrationsPlayer _vibrationsPlayer;
 
-        public void Construct(VibrationsReproducer vibrationsReproducer)
+        public void Construct(VibrationsPlayer vibrationsPlayer)
         {
-            _vibrationsReproducer = vibrationsReproducer;
+            _vibrationsPlayer = vibrationsPlayer;
         }
 
         private void Start()
@@ -33,13 +33,13 @@ namespace Core.UI
 
         public void Toggle()
         {
-            _vibrationsReproducer.Enabled = !_vibrationsReproducer.Enabled;
+            _vibrationsPlayer.Enabled = !_vibrationsPlayer.Enabled;
             UpdateImage();
         }
 
         private void UpdateImage()
         {
-            _turnedOnImage.gameObject.SetActive(_vibrationsReproducer.Enabled);
+            _turnedOnImage.gameObject.SetActive(_vibrationsPlayer.Enabled);
         }
     }
 }

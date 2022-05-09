@@ -13,7 +13,7 @@ namespace DI
 
         protected override void ComposeDependencies(ICanRegisterContainerBuilder builder)
         {
-            builder.Register<VibrationsReproducer>()
+            builder.Register<VibrationsPlayer>()
                 .Register<StatLevelSaver>()
                 .RegisterIfNotNull(vibrationsVibrationsConfig)
                 .RegisterIfNotNull(upgradesUpgradesConfig);

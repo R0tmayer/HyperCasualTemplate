@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Core.Vibrations
 {
-    public class VibrationsReproducer
+    public class VibrationsPlayer
     {
         private const string VibrationsPrefsKey = nameof(VibrationsPrefsKey);
 
@@ -13,7 +13,7 @@ namespace Core.Vibrations
             set => PlayerPrefs.SetInt(VibrationsPrefsKey, value ? 1 : 0);
         }
 
-        public void TryPlayHaptic(HapticTypes hapticTypes)
+        public void PlayHaptic(HapticTypes hapticTypes)
         {
             if (Enabled)
                 MMVibrationManager.Haptic(hapticTypes);
