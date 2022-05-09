@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Core.Input
@@ -6,7 +7,7 @@ namespace Core.Input
     public class InputSwipeReceiver : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         [SerializeField] private float _sensitivity;
-        [SerializeField] private StandaloneInputModuleCustom _standaloneInput;
+        [SerializeField] [Required] private StandaloneInputModuleCustom _standaloneInput;
         private int? _id;
 
         public float DeltaX { get; private set; }

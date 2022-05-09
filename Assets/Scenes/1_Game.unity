@@ -581,10 +581,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd3ea4565a4cd7e42a41f61bfe9c63c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vibrationsVibrationsConfig: {fileID: 11400000, guid: c3e181cc0b1474342ab14f82cf598e18,
+  _vibrationsVibrationsConfig: {fileID: 11400000, guid: c3e181cc0b1474342ab14f82cf598e18,
     type: 2}
-  upgradesUpgradesConfig: {fileID: 11400000, guid: 351f15c5be4f2474486f66b7b6f9d941,
+  _upgradesUpgradesConfig: {fileID: 11400000, guid: 351f15c5be4f2474486f66b7b6f9d941,
     type: 2}
+  _gameParameters: {fileID: 11400000, guid: df5129be5cae84047b35fc0edb40ac4b, type: 2}
 --- !u!114 &929501517
 MonoBehaviour:
   m_ObjectHideFlags: 0
