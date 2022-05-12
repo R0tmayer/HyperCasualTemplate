@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DG.Tweening;
+using UnityEngine;
 
 namespace Core
 {
@@ -8,6 +9,17 @@ namespace Core
     {
         [SerializeField] private float _speed;
 
+        [Header("TapToStart")] 
+        
+        [SerializeField] private Ease _tapToStartEase;
+        [SerializeField] private float _tapToStartDuration;
+        [SerializeField] private bool _firstTouchInput;
+        
+
         public float Speed => _speed;
+
+        public Ease TapToStartEase => _tapToStartEase;
+        public float TapToStartDuration => _tapToStartDuration;
+        public bool FirstTouchInput => _firstTouchInput;
     }
 }

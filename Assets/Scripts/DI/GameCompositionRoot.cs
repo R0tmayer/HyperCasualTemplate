@@ -10,9 +10,9 @@ namespace DI
 {
     public sealed class GameCompositionRoot : DependencyContainerBase
     {
-        [SerializeField] [Required] private VibrationsConfig _vibrationsVibrationsConfig;
-        [SerializeField] [Required] private UpgradesConfig _upgradesUpgradesConfig;
-        [SerializeField] [Required] private GameParameters _gameParameters;
+        [SerializeField] [AssetSelector] private VibrationsConfig _vibrationsVibrationsConfig;
+        [SerializeField] [AssetSelector] private UpgradesConfig _upgradesUpgradesConfig;
+        [SerializeField] [AssetSelector] private GameParameters _gameParameters;
 
         protected override void ComposeDependencies(ICanRegisterContainerBuilder builder)
         {

@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: Game Parameters
   m_EditorClassIdentifier: 
   _speed: 0
+  _tapToStartEase: 10
+  _tapToStartDuration: 2
+  _firstTouchInput: 0
